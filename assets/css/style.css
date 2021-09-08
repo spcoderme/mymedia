@@ -1,9 +1,4 @@
-/**
-* Template Name: Anyar - v4.3.0
-* Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
@@ -69,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 99;
   overflow: hidden;
   background: #fff;
 }
@@ -170,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .cta a:hover {
-  background: #f1a40a;
+  background: #2e1d7a;
 }
 
 /*--------------------------------------------------------------
@@ -193,12 +188,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo {
   font-size: 30px;
-  margin: 0px 0px 100px 0px;
+  margin: -65px 0px 0px 0px;
   padding: 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
   text-transform: uppercase;
+  z-index: 4;
 }
 
 
@@ -208,7 +204,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 100px;
+  margin-top: 1rem;
+  max-height: 10rem;
+  max-width: 6rem;
  
   
   
@@ -490,6 +488,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
+  
 }
 
 #hero .carousel-container {
@@ -508,7 +507,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h2 {
      color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 48px;
   font-weight: 700;
 }
@@ -529,7 +528,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   font-size: 48px;
   line-height: 1;
-  width: auto;
+  width:auto;
   height: auto;
 }
 
@@ -539,7 +538,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 12px 32px;
+  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   line-height: 1;
@@ -557,7 +556,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hero-img{
   max-height: 40%;
-  max-width:  50%; 
+  width: 65em; 
   
 }
 
@@ -567,6 +566,23 @@ h1, h2, h3, h4, h5, h6 {
   }
   #hero .carousel-control-prev, #hero .carousel-control-next {
     width: 5%;
+  }
+  #hero .carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: initial;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+   }
+   .hero-img{
+    max-height: 40%;
+    max-width:  60%; 
+    
   }
 }
 
@@ -580,6 +596,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   
 }
+@media (max-width: 768px){
+  .hero-img{
+    max-width: 25em;
+  }
+  
+}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -620,7 +643,18 @@ section {
   margin-bottom: 7rem;
   
 }
-
+.myaar{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 992px) {
+  .myaar-content h3{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    
+  }
+}
 .myaar-img{
   width: 12rem;
   height: 12rem;
